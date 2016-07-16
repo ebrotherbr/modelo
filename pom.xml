@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.com.ebrother</groupId>
+  <artifactId>modelo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>modelo-web</module>
+  	<module>modelo-ejb</module>
+  	<module>modelo-ear</module>
+  </modules>
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <version.compiler.plugin>3.1</version.compiler.plugin>
+        <version.ear.plugin>2.10</version.ear.plugin>
+        <version.ejb.plugin>2.3</version.ejb.plugin>
+        <version.surefire.plugin>2.16</version.surefire.plugin>
+        <version.war.plugin>2.5</version.war.plugin>
+
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>br.com.ebrother</groupId>
+  			<artifactId>modelo-ejb</artifactId>
+  			<version>${project.version}</version>
+  			<type>ejb</type>
+  		</dependency>
+  		<dependency>
+  			<groupId>br.com.ebrother</groupId>
+  			<artifactId>modelo-web</artifactId>
+  			<version>${project.version}</version>
+  			<type>war</type>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+</project>
