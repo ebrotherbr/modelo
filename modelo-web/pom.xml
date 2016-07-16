@@ -9,6 +9,19 @@
 	<artifactId>modelo-web</artifactId>
 	<packaging>war</packaging>
 	
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>br.com.ebrother</groupId>
+			<artifactId>modelo-ejb</artifactId>
+			<type>ejb</type>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
@@ -23,12 +36,4 @@
 		</plugins>
 	</build>
 
-	<dependencies>
-		<dependency>
-			<groupId>br.com.ebrother</groupId>
-			<artifactId>modelo-ejb</artifactId>
-			<type>ejb</type>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
 </project>
