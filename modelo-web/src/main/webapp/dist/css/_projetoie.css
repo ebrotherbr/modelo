@@ -1,0 +1,24 @@
+.selBusca select {filter:alpha(opacity=0);}
+.newslleter form fieldset input[type=submit] {
+	*margin:0;
+}
+div.pattern {*position:relative; /**apenas ie tanto 7 como menor***/}
+div.subPattern {
+	*position:absolute; /**apenas ie tanto 7 como menor***/
+	*top:50%; /**apenas ie tanto 7 como menor***/
+}
+div.outPattern {
+	*position:relative; /**apenas ie tanto 7 como menor***/
+	*top:-50%; /**apenas ie tanto 7 como menor***/
+}
+button.calculoCarrinho {*width:127px;}
+button.calculoCarrinho span {margin:0px 0 0 15px;}
+button.calculoCarrinho span + span {margin:0px;}
+form.busca fieldset button {*width:82px;}
+.parcelamento ul li {
+	*display: inline;
+	*zoom:1;
+	width:116px;
+
+
+}

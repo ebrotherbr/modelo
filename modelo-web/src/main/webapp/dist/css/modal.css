@@ -1,0 +1,91 @@
+html {margin: 0!important;}
+.modal {
+	width:420px;
+	background:#fff;
+}
+
+h1 {
+	padding: 17px;
+	text-transform: uppercase;
+	font:bold 15px arial;
+	color:#003F68;
+}
+
+/************
+	ESQUECI
+	  A
+	SENHA
+*************/
+form {
+	padding:0 0 33px;
+	width:385px;
+	margin:0 auto;
+}
+
+form label {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+label span {
+	display: block;
+	font:12px Arial;
+	color: #666;
+	padding:0 0 5px 0;
+}
+
+input[type="text"] {
+	border:0;
+	height:32px;
+	overflow: hidden;
+	font:12px/20px Arial;
+	color:#666;
+	text-indent:5px;
+	padding:5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.smaller {
+	float: left;
+	margin:0 5px 10px 0;
+}
+.micro {
+	float: left;
+	margin-right: 3px;
+}
+.big {
+	width:344px;
+	background-position: 0 -264px;
+}
+
+button {clear: both;}
+
+textarea {
+	background-position:0 -312px;
+	width:343px;
+	height:96px;
+	font:12px/31px Arial;
+	text-indent:5px;
+	color:#666;
+	border:0;
+	margin-bottom:20px;
+	overflow: hidden;
+}
+small {
+	color:#666;
+	font:11px Arial;
+}
+article {
+	width:268px;
+	margin:0 auto 0px 16px;
+	padding:0 0 40px 0;
+}
+
+article p {
+	color:#666;
+	font:12px Arial;
+}
+
+.modalNotificationButton {margin:5px 0 !important;}

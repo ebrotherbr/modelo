@@ -1,0 +1,64 @@
+
+
+Na tela de entrega:
+
+Era: escolha, mudei para choice
+Era: tt-escolha, mudei para ttChoice
+Era: usarEndereco, mudei useAddress
+
+--------------------------------------
+Tela formas-pagamento:
+
+Era: box-forma-pagamento, mudei para boxPayment
+Era: form-pagamento, mudei para formPayment
+Era: parcelas, mudei para plots
+Era: boleto, mudei para
+
+----------------------------------------
+
+Tela Confirmação do pedido:
+
+Era: confirmacao, mudei para confirmation
+Era: confirmacaoPagamento, mudei para confirmationPayment
+Era: numPedido, mudei para numRequest
+Era: topoPedido, mudei para topRequest
+Era: bottomPedido, mudei para bottomRequest
+Era: dadosPagamento, mudei para dataPayment
+Era: imprimir, mudei para print
+Era: dadosEntrega, mudei para dataDelivery
+
+----------------------------------------
+
+Tela Aviso:
+
+Era: nome, mudei para name
+Era: modal-aviso-button, mudei para modalNotificationButton
+
+
+----------------------------------------
+
+Tela Indique:
+
+Era: nome, mudei para name
+Era: nome-amigo, mudei para nameFriend
+Era: email-amigo, mudei para emailFriend
+Era: comentario, mudei para comment
+
+----------------------------------------
+
+Tela Prazo:
+
+Era: cep, mudei para zipCode
+------------------------------
+
+Tela de Cadastro:
+
+Era: cadastro, mudei para formCadastre
+Era: pequeno, mudei para smaller
+--------------------------------
+
+Tela de meus pedidos:
+
+Era: ver-detalhes, mudei para seeDetails
+Era: exibir-detalhes, mudei para viewDetails
+

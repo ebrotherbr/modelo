@@ -1,0 +1,293 @@
+/*forms*/
+
+/*CALCULATION CART*/
+.buttonCalculationCart {
+	text-transform: uppercase;
+	background: url(../img/bt-buttons.png) 0 -79px no-repeat;
+	height:39px;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	border:0;
+	cursor: pointer;
+}
+.ie7 .buttonCalculationCart {min-width:103px;}
+
+.buttonCalculationCart span {
+	background: url(../img/bt-buttons.png) 0 -156px repeat-x;
+	height:39px;
+	margin:-2px 0 0 15px;
+	line-height:39px;
+	float: left;
+}
+.buttonCalculationCart:after {
+	content:"";
+	float: left;
+	margin:-2px 0 0 0;
+	background: url(../img/bt-buttons.png) 0 0 repeat-x;
+	width: 18px;
+	height: 39px;
+}
+
+/**ies e chrome**/
+.all .buttonCalculationCart span,
+.chrome .buttonCalculationCart:after,
+.chrome .buttonCalculationCart span,
+.all .buttonCalculationCart:after {margin-top: 0;}
+
+/******************
+	IDENTIFICAÇÃO
+*******************/
+.formLogin {
+	overflow:hidden;
+	width:679px;
+	margin:0 auto;
+	padding:53px 0 0 0;
+}
+.formLogin fieldset {
+	width:300px;
+	float:left;
+}
+.formLogin fieldset + fieldset {float:right;}
+.ttLogin {
+	font:bold 15px Arial;
+	text-transform:uppercase;
+	height:57px;
+}
+.formLogin label {
+	display:block;
+	padding:0 0 18px 0;
+	overflow:hidden;
+}
+.formLogin fieldset:first-child label + label {padding:0 0 22px;}
+.formLogin label span {
+	display:block;
+	font: 12px Arial;
+	text-indent:3px;
+}
+.formLogin label input {
+	font:bold 13px/31px Arial;
+	border:0;
+}
+ .iptLogin {
+	background-position:0 -424px;
+	width:289px;
+	height:37px;
+	text-indent:15px;
+	line-height:37px;
+}
+
+.formLogin label small {font:11px Arial;}
+.formLogin button {clear:both;}
+.cepNumber {
+	width:97px;
+	height:31px;
+	font:bold 13px/29px Arial;
+	background-position: 0 -645px;
+	border:0;
+	padding:0 0 0 12px;
+	float:left;
+	margin-right: 6px;
+}
+.cepZipNumber {background-position: 0 -731px;
+}
+
+/****************
+	CADASTRO
+****************/
+.formCadastre {
+	margin:0 auto 0 18px;
+	overflow: hidden;
+	width:665px;
+	padding:34px 0 0 0;
+}
+.formCadastre fieldset {
+	margin: 0 0 40px 0;
+	overflow: hidden;
+}
+.formCadastre p {
+	font:14px Arial;
+	width:618px;
+	padding:0 0 22px 0;
+}
+.formCadastre h5 {
+	font:bold 15px Arial;
+	padding-bottom:23px;
+}
+.formCadastre label {
+	display: block;
+	width:663px;
+	overflow: hidden;
+	margin: 0 0 7px 0;
+}
+ .txtCadastre {
+ 	float: left;
+	text-align:right;
+	width:199px;
+	font:bold 13px/30px Arial;
+	height:30px;
+	padding: 0 5px 0 0;
+ }
+ .txtNotRequire {font-weight: normal;}
+
+.formCadastre label small {
+	font:13px/30px Arial;
+	float: left;
+	padding:0 5px;
+}
+.formCadastre input[type=text],
+.formCadastre input[type=password] {
+	float: left;
+	height:32px;
+	border:0;
+	font:12px/32px Arial;
+	text-indent:10px;
+	margin-right: 5px;
+}
+.formCadastre input[type=radio] {
+	vertical-align:middle;
+	height:30px;
+	float: left;
+}
+
+.formCadastre button {
+	float: none;
+	margin: 28px auto 0 auto;
+	display: block;
+}
+/****************
+	MEU CARRINHO
+*****************/
+.formCart {
+	overflow:hidden;
+	width:100%;
+}
+.coupon {
+	float:left;
+	background-position:0 -561px;
+	width:164px;
+	border:0;
+	margin:0 20px 0 0;
+	height:31px;
+	padding:4px;
+	line-height: 25px;
+}
+.buttonCart {text-transform: uppercase;}
+.cepNumberCart {
+	width:97px;
+	height:31px;
+	font:bold 13px/29px Arial;
+	background-position:0 -645px;
+	border:none;
+	padding:0 0 0 12px;
+	float:left;
+	margin-right: 6px;
+}
+.amount {
+	width:42px;
+	height:22px;
+	line-height: 22px;
+	text-align:center;
+	background-position:0 bottom;
+	border:none;
+}
+
+/*************
+	FALE
+	CONOSCO
+**************/
+.formContactUs {padding: 32px 0px 0px 0px;}
+.formContactUs input {
+	height:32px;
+	border:0;
+	float: left;
+	font:12px/30px Arial;
+	text-indent:5px;
+	margin-right: 6px;
+}
+
+.formContactUs label {
+	display: block;
+	width:598px;
+	margin:0 0 10px 0;
+	overflow: hidden;
+}
+.formContactUs label span {
+	float: left;
+	font:bold 13px/20px Arial;
+	width:99px;
+	padding-right:10px;
+	text-align:right;
+}
+.formContactUs select {
+	width:221px;
+	float: left;
+	font:12px/30px Arial;
+}
+.formContactUs textarea {
+	overflow: hidden;
+	width:440px;
+	height:138px;
+	background-position:0 -63px;
+	border:0;
+	font:12px/30px Arial;
+	text-indent:5px;
+}
+.formContactUs button {
+	margin:0 0 0 110px;
+	overflow: hidden;
+}
+
+/*************
+	BUSCA
+**************/
+.search {
+	width:617px;
+	margin:0 auto 20px auto;
+	clear: both;
+}
+.search legend {
+	text-transform:uppercase;
+	font:bold 14px Arial;
+	height:43px;
+}
+.search div {
+	background:url(../img/bg-forms.png) no-repeat;
+	height:40px;
+	padding:7px;
+}
+.search input {
+	width:450px;
+	float: left;
+	margin:5px 35px 0 20px;
+	overflow: hidden;
+	height:28px;
+	font:bold 14px/28px Arial;
+	border:0;
+	background:none;/*nao herdar background original*/
+}
+.ie7 .search input {width: 445px;}
+/*search placeholder*/
+.search ::-webkit-input-placeholder {color:#666;}
+.search :-moz-placeholder {color:#666;}
+.search ::-moz-placeholder {color:#666;}
+.search :-ms-input-placeholder {color:#666;}
+/************
+	CHANGE
+	PASSWORD
+************/
+.formChangePassword {width:300px;}
+.formChangePassword label {
+	display: block;
+	min-height: 65px;
+}
+.formChangePassword label span {
+	display: block;
+	font:12px arial;
+	padding-bottom: 4px;
+}
+.formChangePassword input {
+	padding: 4px;
+	line-height:26px;
+}
+.formChangePassword button {margin:0}

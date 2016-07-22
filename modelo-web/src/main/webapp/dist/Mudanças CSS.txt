@@ -1,0 +1,12 @@
+Tela confirmação do pedido:
+
+Linha: 1593
+article.dadosEntrega h4 {
+mudar para:
+article.dadosEntrega h5 {
+
+Linha: 1547
+.dadosPagamento h5 {
+mudar para:
+.dadosPagamento h4 {
+

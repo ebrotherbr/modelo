@@ -1,0 +1,23 @@
+/**********************
+	=====CORES=====
+***********************/
+
+/*****padrao de cores******/
+.colBlack {color:#000;}
+.colWhite {color:#fff;}
+.colYellow {color:#FFD24D;}
+
+/***cores Primarias & tons***/
+.colPrimary {color:#666;} /*cor principal*/
+.colPrimaryOne {color:#7E7E7E;}
+.colPrimaryTwo {color:#717171;}
+.colPrimaryThree {color:#999;}
+.colPrimaryFour {color:#9A9A9A}
+.colPrimaryFive {color:#C5C5C5;}
+.colPrimarySix {color:#3c3c3c;}
+
+/*** cores secundarias & tons ***/
+.colSecondary {color:#003F68;}
+.colSecondaryOne {color:#002741;}
+.colSecondaryTwo {color:#00375A;}
+.colSecondaryThree {color:#005085;}

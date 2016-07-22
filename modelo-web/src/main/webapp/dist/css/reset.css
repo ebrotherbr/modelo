@@ -1,0 +1,96 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*elementos*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,
+dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,
+tfoot,thead,tr,th,td,article,aside,canvas,details,
+figcaption,figure,footer,header,hgroup,menu,nav,
+section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: Arial;
+}
+/*elementos html5*/
+article,aside,details,figcaption,figure,footer,
+header,hgroup,menu,nav,section,main {
+	display: block;
+}
+
+/*classes personalizadas*/
+.clear-down {clear: both;}
+.replace {
+	overflow: hidden;
+	text-indent: -9000em;
+	display: block;
+}
+
+:focus {outline: none;}
+
+::-webkit-input-placeholder {
+    color:#fff;
+    opacity: 1;
+}
+:-moz-placeholder {
+    color:#fff;
+    opacity: 1;
+}
+::-moz-placeholder {
+    color:#fff;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color:#fff;
+    filter: alpha(opacity=1);
+}
+
+/*forms*/
+fieldset {display: block;}
+button,
+input[type="submit"],
+input[type="reset"] {
+	cursor: pointer;
+	background: #323232;
+	border:0;
+	font: bold 12px Arial;
+	padding: 5px;
+}
+input[type="text"],input[type="password"],
+input[type="email"],
+textarea {
+	background-image: url(../img/bg-forms.png);
+	background-repeat: no-repeat;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+textarea {resize:none;}
+
+/*links*/
+ul {list-style: none;}
+
+/*tabelas*/
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+/*links*/
+a {text-decoration: none;}
+a:active,a:focus,a:visited {}
+a:hover {text-decoration: underline;}
+
+/*titulos*/
+h1,h2,h3,h4,h5,h6 {
+	font-family: arial;
+	color:#003F68;
+}

@@ -1,0 +1,531 @@
+/***********
+	TOPO
+************/
+#top {
+	background:#005085;
+	height:324px;
+	margin:0 auto;
+}
+.userContact {
+	overflow:hidden;
+	background:url(../img/bg-navegacaoTopo.jpg) repeat-x;
+}
+.navigationTop {
+	width:940px;
+	margin:0 auto;
+	padding:5px 0;
+	overflow:hidden;
+}
+.pageCurrent {
+	float: left;
+	height:23px;
+	background:url(../img/ico-home.png) no-repeat 0 center;
+	text-indent:23px;
+	font:bold 13px/23px Arial;
+}
+.itemsContact {
+	overflow:hidden;
+	width:497px;
+	height:23px;
+	float:right;
+}
+.itemsContact li {
+	height:23px;
+	font:bold 13px/23px Arial;
+}
+.itemsContact a {
+	display:block;
+	font:bold 13px/23px Arial;
+}
+.tel {
+	width:150px;
+	float: left;
+}
+.tel span {
+	float:left;
+	background:url(../img/ico-telefone.png) no-repeat left center;
+	width:23px;
+	margin: 0px 10px 0px 0px;
+	overflow:hidden;
+}
+.mail {
+	width:296px;
+	float: left;
+}
+.mail span {
+	float:left;
+	background:url(../img/ico-email.png) no-repeat left center;
+	width:16px;
+	margin:0 10px 0 0;
+	overflow:hidden;
+}
+.mail a {float:left;}
+.twitter {float:left;}
+.twitter a {
+	background:url(../img/ico-twitter.png) no-repeat 0 0;
+	width:21px;
+	height:23px;
+}
+.facebook {float:right;}
+.facebook a {
+	background:url(../img/ico-facebook.png) no-repeat 0 0;
+	width:20px;
+	height:23px;
+}
+/***************
+	MENU
+	PRINCIPAL
+****************/
+#menuMain {
+	/*background:url(../img/bg-menuPrincipal.jpg) repeat-x 0 0;*/
+	background-color: #fff;
+	border-bottom: 2px solid #00477A;
+	height:30px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.boxMenuMain {
+	width:940px;
+	margin:0 auto;
+	height:28px;
+	overflow:hidden;
+}
+.menuTop {
+	float:right;
+	min-width:355px;
+}
+.menuTop li {
+	float:left;
+	line-height:26px;
+}
+.menuTop a {
+	float:left;
+	font:12px/28px Arial;
+}
+.lkMenuTop {padding:0 13px;}
+
+.treatment {padding-left: 13px;}
+/***************
+	topo
+	USUARIO
+****************/
+#containerUser {
+	width:auto;
+	margin:0 auto;
+	background:url(../img/bg-topoUsuario.jpg) no-repeat top center;
+	min-height:200px;
+}
+.boxUser {
+	width:940px;
+	margin:0 auto;
+}
+.user {
+	margin:0 0 11px 0;
+	overflow:hidden;
+}
+.user + .user {margin-bottom:13px;}
+.boxLogo {
+	float:left;
+	width:426px;
+	height:107px;
+	padding:23px 0 0 0px;
+}
+.boxLogo a {
+	background:url(../img/bg-logo.png) no-repeat;
+	width:294px;
+	height:101px;
+}
+#login {
+	width:278px;
+	float: left;
+	margin:42px 0 0 0;
+	overflow:hidden;
+	background:url(../img/ico-usuario.png) no-repeat 0 center;
+	min-height:66px;
+}
+#login p {
+	font:12px Arial;
+	width:158px;
+	margin:20px 0 0 57px;
+}
+
+/***user minhas compras***/
+.myPurchases {
+	width:220px;
+	float:right;
+	margin:42px 0 0 0;
+	overflow:hidden;
+}
+.boxMyPurchases {
+	background:url(../img/ico-cesta.png) no-repeat 0 center;
+	width:130px;
+	height:66px;
+	float:left;
+}
+.boxMyPurchases a {
+	float:right;
+	text-align:center;
+	width:74px;
+	font:15px Arial;
+	margin:18px 0 0 0;
+}
+
+.myPurchasesValue {
+	background:url(../img/bg-meuCarrinho.png) no-repeat;
+	width:76px;
+	height:64px;
+	float:right;
+	text-align:center;
+	padding:14px 0 0 0;
+}
+.myPurchasesValue span {
+	display:block;
+	font:11px Arial;
+}
+/***user busca ***/
+.formSearch {
+	background:url(../img/bg-busca.png) no-repeat;
+	width:940px;
+	overflow:hidden;
+	min-height:46px;
+}
+.formSearch input[type=text] {
+	width:748px;
+	height:27px;
+	font:14px/27px Arial;
+	margin:8px 0 0 28px;
+	background:none;
+	border:none;
+	overflow:hidden;
+	float:left;
+}
+.formSearch button[type=submit] {
+	border:none;
+	background:none;
+	text-indent:-9000em;
+	cursor:pointer;
+	width:36px;
+	float:left;
+}
+.selSearch {
+	width:113px;
+	float:right;
+	background:url(../img/bg-selBusca.png) no-repeat;
+	height:46px;
+	position:relative;
+}
+.selSearch span {
+	position:absolute;
+	top:12px;
+	margin:0px 0px 0px 4px;
+	width:88px;
+	text-align:center;
+}
+.selSearch select {
+	font:14px Arial;
+	margin: 12px auto 0;
+	overflow:hidden;
+    width: 88px;
+    display:block;
+    opacity: 0;
+}
+.all .selSearch select {
+	filter: alpha(opacity=1);
+}
+/***************
+	NAV
+institucional
+****************/
+.menuInstitutional {
+	width:auto;
+	overflow:hidden;
+	background:url(../img/bg-menuInstitucional.jpg) repeat top;
+	height:61px;
+}
+.menuInstitutional ul {
+	width:940px;
+	margin:0 auto;
+	height:58px;
+}
+.menuInstitutional li {float:left;}
+.menuInstitutional a {
+	display:block;
+	font:14px/58px Verdana;
+	height:58px;
+	border-left:1px solid #E3B426;
+}
+.menuInstitutional li:first-child a {border:0;}
+
+.menuInstitutional a:hover {background:url(../img/bg-hoverInstitucional.jpg) repeat 0 0;}
+/**************
+	PRIMARIO
+**************/
+#primary {
+	width:231px;
+	float:left;
+}
+/*****************
+	CATEGORIAS
+*****************/
+.categories {
+	width:230px;
+	margin:0 0 20px 0;
+	overflow:hidden;
+}
+.menuCategories {
+	padding:42px 0 27px 20px;
+	width:208px;
+	background:#e9e9e9;
+	border:1px solid #dedede;
+	border-top:none;
+}
+.menuCategories li {padding:0 0 12px 0;}
+.ttSubCategory {
+	font:bold 13px Arial;
+	text-transform:uppercase;
+}
+.subCategories {
+	margin:0;
+	padding:9px 0;
+	border:none;
+}
+.subCategories li {
+	background:url(../img/ico-bullet.jpg) no-repeat 0 center;
+	padding:0;
+}
+.subCategories a {
+	text-transform:lowercase;
+	text-indent:16px;
+	display:block;
+	font:bold 13px Arial;
+}
+/*****************
+	NEWSLLETER
+*****************/
+.newslleter {
+	width:230px;
+	overflow:hidden;
+}
+.formNewslleter {
+	border:1px solid #dedede;
+	border-top:none;
+	padding:0 0 30px 0;
+}
+.formNewslleter fieldset {display:block;}
+.formNewslleter p {
+	font:12px Arial;
+	width:168px;
+	margin:14px 0 14px 17px;
+	overflow:hidden;
+}
+.formNewslleter input[type=text] {
+	margin-left:17px;
+	overflow:hidden;
+	height:40px;
+	width:191px;
+	font:12px/40px Arial;
+	padding-left:13px;
+	background:url(../img/bg-inputNews.jpg) no-repeat;
+	border:none;
+}
+.newsName {margin-bottom:10px;}
+.newsEmail {margin-bottom:21px;}
+
+.bgField {
+	padding-left: 15px;
+	overflow:hidden;
+	width:190px;
+}
+
+.bgField input[type=submit] {
+	background:url(../img/bt-buttons.png) repeat 0 -417px;
+	font:bold 12px Arial;
+	border:none;
+	text-transform:uppercase;
+	float:left;
+	display:inline;
+	height:30px;
+}
+.bgField:before  {
+	background:url(../img/bt-buttons.png) no-repeat 0 -335px;
+	float:left;
+	height:30px;
+	content: "";
+	width:18px;
+}
+.bgField:after {
+	background:url(../img/bt-buttons.png) 0 -259px no-repeat;
+	height:30px;
+	width:18px;
+	content: "";
+	float:left;
+}
+/***************
+	BREADCRUMB
+****************/
+#breadcrumb {
+	background:url(../img/bg-breadcrumb.jpg) repeat-x center center;
+	height:63px;
+}
+.crumb {
+	width:940px;
+	margin:0 auto;
+}
+.crumb li {
+	font:12px/59px Verdana;
+	float: left;
+	padding-right: 2px;
+}
+.crumb a {font-size: 12px;}
+
+/******************************
+			RODAPE
+*******************************/
+#footer {
+	text-align:center;
+	clear:both;
+	width:auto;
+	height:319px;
+	background:url(../img/bg-rodape.jpg) no-repeat center center;
+}
+.boxFooter {
+	width:940px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.contact {
+	width:190px;
+	float:left;
+	height:319px;
+}
+/****telefone****/
+.shopLogo {
+	background:url(../img/lk-logoAz.jpg) no-repeat 0 0;
+	width:166px;
+	height:105px;
+	margin:70px 0 32px 0;
+	overflow:hidden;
+}
+.phone {
+	width:191px;
+	height:28px;
+	background:url(../img/ico-telefone.jpg) no-repeat 0 0;
+}
+.phone span {
+	font:21px Arial;
+	text-indent:42px;
+	display:block;
+	height:28px;
+	margin:0 0 12px 0;
+	overflow:hidden;
+}
+.phone small {font:16px Arial;}
+.phone p {
+	text-align:left;
+	font:11px Arial;
+}
+/**************
+	Pagamento
+***************/
+.payment {
+	float:right;
+	height:319px;
+	width:694px;
+}
+.payment aside {
+	margin:23px 0 0 0;
+	overflow:hidden;
+}
+.ttFooterSecondary {
+	float:left;
+	margin:0 0 7px 0;
+	overflow:hidden;
+}
+.cards {
+	width:437px;
+	float:left;
+}
+.insurance {
+	width:144px;
+	float:right;
+}
+.footerCards {clear:both;}
+.footerCards li {
+	float:left;
+	list-style:none;
+	margin:0 3px 0 0;
+	overflow:hidden;
+}
+.forSale {
+	float:right;
+	font:12px Arial;
+	margin:4px 8px 0 0;
+	overflow:hidden;
+	border-top:1px solid #e1e1e1;
+	padding:4px 0 0 0;
+	width:437px;
+	text-align:right;
+}
+/**************
+	nav Rodape
+***************/
+#menuFooter {
+	border-top:1px solid #e1e1e1;
+	border-bottom:1px solid #e1e1e1;
+	clear:both;
+	width:690px;
+	overflow:hidden;
+	padding:14px 0;
+	margin:33px 0 0 0;
+}
+#menuFooter li {float:left;}
+
+#menuFooter a {
+	font:11px Arial;
+	padding:0 5px;
+}
+#menuFooter li:first-child a {padding-left:0;}
+/****address****/
+address {
+	text-align:left;
+	font:12px Arial;
+	margin:19px 0 22px 0;
+	overflow:hidden;
+}
+address .geo {padding:0 0 3px 0;}
+address .hcard {display:block;}
+.copyright {
+	float:left;
+	text-align:left;
+	font:12px/36px Arial;
+}
+
+.shopVirtual {
+	font:11px Arial;
+	background:url(../img/ico-lojaVirtual.jpg) no-repeat;
+	height:26px;
+	width:175px;
+	float:right;
+	text-align:left;
+	padding:0 0 16px 0;
+	overflow:hidden;
+	display: none;
+}
+.shopVirtual span {
+	display:block;
+	width:78px;
+	margin:0 0 0 51px;
+	overflow:hidden;
+}
+.shopVirtual span + span {width:111px;}
+
+/****titulo principal************/
+.ttMain {
+	font-size: 18px;
+	line-height: 49px;
+	text-transform:uppercase;
+	background:url(../img/tt-titulos.jpg) repeat 0 0;
+	height:49px;
+	text-indent:20px;
+}

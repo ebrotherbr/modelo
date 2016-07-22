@@ -1,0 +1,1192 @@
+@import url(reset.css);
+@import url(cores.css);
+@import url(base.css);
+@import url(forms.css);
+
+/***********
+	GERAL
+************/
+#general {
+	margin:0 auto;
+	width:auto;
+	text-align:left;
+}
+
+/***************
+	CONTEUDO
+****************/
+#content {
+	margin:0 0 51px 0;
+	overflow:hidden;
+}
+/***************
+	BANNER
+****************/
+#banner {
+	background:url(../img/bg-navBanner.jpg) repeat 0 0;
+	height:360px;
+}
+.boxBanner {
+	background:url(../img/bg-banner.jpg) no-repeat center center;
+	height:360px;
+}
+.parentBanner {
+	position:relative;
+	margin:0 auto;
+	width:940px;
+}
+#banner .banners {
+	width:936px;
+	margin:0 auto;
+	height:350px;
+	overflow:hidden;
+	background:transparent;
+}
+.banners a {
+	background:transparent!important;
+	margin:28px 0 0 0;
+	overflow:hidden;
+}
+
+
+/**************
+	PRINCIPAL
+**************/
+#main {
+	background:#fff url(../img/bg-principal.jpg) repeat-x 0 0;
+	padding:40px 0 0 0;
+	overflow:hidden;
+	clear: both;
+}
+.boxContent {
+	width:940px;
+	margin:0 auto;
+}
+
+/***************
+	SECUNDARIO
+****************/
+#secondary {
+	float: right;
+	width:691px;
+}
+.boxSecondary {
+	background:#fff;
+	width:689px;
+	border:1px solid #e5e5e5;
+	border-top:none;
+	margin:0 0 20px 0;
+}
+/***********
+	HOME
+************/
+#secondary .listProducts {
+	overflow:hidden;
+	margin:0 0 21px 0;
+}
+#secondary .listProducts ul {
+	border:1px solid #e5e5e5;
+	width:689px;
+	overflow:hidden;
+}
+
+#secondary .listProducts li {
+	width:229px;
+	float:left;
+	overflow:hidden;
+	text-align:center;
+}
+
+.contentItems {
+	border-bottom:1px solid #e5e5e5;
+	padding:20px 0;
+	height:327px;
+}
+
+.boxProduct {
+	height:135px;
+	text-align:center;
+	width:229px;
+}
+
+.boxProduct a {display:block;}
+
+.contentItems h4 {
+	height:40px;
+	margin:0 auto;
+	width:160px;
+	font:16px Arial;
+}
+
+.contentItems p {
+	font-size: 13px;
+	margin:0 0 8px 0;
+	overflow:hidden;
+}
+.contentItems del {
+	text-decoration:none;
+	font-size: 10px;
+	display:block;
+}
+.contentItems ins {
+	display:block;
+	font-size: 12px;
+	text-decoration:none;
+	margin:0 0 24px 0;
+	overflow:hidden;
+}
+.buy {
+	width:142px;
+	height:40px;
+	background:url(../img/lk-comprar.jpg) no-repeat 0 -67px;
+	display:block;
+	text-align:center;
+	font:bold 12px/44px Arial;
+	margin:0 auto 5px auto;
+	text-transform:uppercase;
+}
+.buy:hover {background-position:0 0;}
+.moreProducts {
+	width:107px;
+	margin:0 auto;
+	display:block;
+	font-size: 12px;
+	text-align:center;
+	cursor:pointer;
+}
+/***********
+	DETALHE
+	PRODUTO
+************/
+.vitrine {padding:34px 0 0 0;}
+
+.boxVitrine {
+	width:651px;
+	margin:0 auto;
+}
+
+.vitrine h1 {
+	font:bold 26px Arial;
+	margin:0 0 29px 0;
+	overflow:hidden;
+}
+
+.detailProduct {
+	float:left;
+	width:326px;
+	padding:0 0 20px 0;
+}
+.detailProduct + .detailProduct {
+	width:293px;
+	float:right;
+}
+.boxBuy {
+	width:291px;
+	overflow:hidden;
+	margin:0 0 9px 0;
+}
+
+.boxBuy span, .boxBuy ins {
+	display:block;
+	font:14px Arial;
+	margin:0 0 3px 0;
+	overflow:hidden;
+	text-decoration:none;
+}
+
+.boxBuy ins {
+	font-size:17px;
+	font-weight:bold;
+	float:left;
+}
+.boxBuy em {font:14px Arial;}
+.buying {
+	background:url(../img/lk-comprarDetalhe.jpg) no-repeat;
+	width:134px;
+	height:59px;
+	float:right;
+	overflow:hidden;
+}
+
+.buying a {
+	font:bold 13px/50px Arial;
+	text-transform:uppercase;
+	text-indent:19px;
+	width:77px;
+	display:block;
+	margin:0 auto;
+}
+
+.availability {
+	border:1px solid #e5e5e5;
+	width:282px;
+	padding:9px 0 10px 9px;
+	margin:0 0 11px 0;
+	overflow:hidden;
+}
+
+.availability p {font:12px Arial;}
+.term {
+	width:291px;
+	height:71px;
+	background:#f3f3f3 url(../img/ico-detalhe-produto.jpg) no-repeat 20px center;
+	line-height:71px;
+	overflow:hidden;
+	margin:0 0 10px 0;
+}
+.calcTerm {
+	display:block;
+	width:144px;
+	height:48px;
+	margin:5px 0 0 104px;
+	font:12px/18px Arial;
+}
+.subdivision {
+	background:#f3f3f3;
+	width:290px;
+}
+
+.txtSubdivision {
+	font:bold 18px/24px Arial;
+	background:url(../img/ico-parcelaProduto.jpg) no-repeat left center;
+	height:39px;
+	width:253px;
+	margin:0 auto;
+	padding:20px 0 0 0;
+	text-indent:61px;
+}
+
+.subdivision ul {
+	width:256px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.subdivision  li {
+	float: left;
+	font:11px Arial;
+	padding:0 10px 11px 0;
+}
+
+.productPrincipal {
+	padding:0 0 20px 0;
+	border:1px solid #e5e5e5;
+	border-top:none;
+	border-bottom:none;
+	background:url(../img/bg-produtoDestaque.jpg) repeat-x top;
+	position:relative;
+	z-index:1;
+}
+.pattern {
+	display:table;
+	height:209px;
+	width:326px;
+}
+.ie7 .pattern {position:relative;}
+.subPattern {
+	display:table-cell;
+	vertical-align:middle;
+	width:326px;
+}
+.ie7 .subPattern {
+	position:absolute;
+	top:50%;
+}
+.outPattern {width:326px;}
+.ie7 .outPattern {
+	position:relative;
+	top:-50%;
+}
+.imageWrapper {
+	vertical-align: middle;
+	margin: 0 auto;
+	width: 209px;
+}
+.zoomImage {
+	display:block;
+	margin:0 auto;
+	cursor:pointer;
+	width:209px;
+}
+.zoom {
+	background:url(../img/ico-lupa.jpg) no-repeat left center;
+	height:27px;
+	text-indent:33px;
+	display:block;
+	font:12px/20px Arial;
+	margin:0 auto;
+	width:228px;
+}
+/**************
+	CARROSSEL
+***************/
+.navCarousel {
+	background:url(../img/bg-carrossel.jpg) no-repeat;
+	width:326px;
+	height:100px;
+	overflow:hidden;
+	position:relative;
+	margin:0 0 14px 0;
+	z-index:0;
+}
+.boxCarousel {
+	width:211px;
+	height:72px;
+	margin:15px auto 0 auto;
+	overflow:hidden;
+	z-index:0;
+}
+.boxCarousel li {
+	background:#fff;
+	width:66px!important;
+	height:66px!important;
+	float:left;
+	margin:0 5px 0 0;
+}
+.boxCarousel li a {
+	display:block;
+	margin:17px auto 0 auto;
+	display:block;
+	width:45px;
+}
+.icoPrev {
+	background:url(../img/lk-anterior.png) no-repeat;
+	width:22px;
+	height:34px;
+	position:absolute;
+	left:19px;
+	top:37px;
+	display:block;
+	text-indent:-9000em;
+}
+.icoNext {
+	background:url(../img/lk-proximo.png) no-repeat;
+	width:22px;
+	height:34px;
+	position:absolute;
+	right:19px;
+	top:37px;
+	display:block;
+	text-indent:-9000em;
+}
+.descProduct {
+	border:1px solid #e5e5e5;
+	margin:0 0 20px 0;
+	clear:both;
+}
+.descProduct p {
+	padding:13px 17px;
+	font:12px Arial;
+}
+/*************
+	AVALIAÇÃO
+**************/
+.rate {
+	width:326px;
+	overflow:hidden;
+}
+.evaluation {
+	float:left;
+	width:140px;
+	margin:0 0 20px 0;
+	overflow:hidden;
+}
+.evaluation + .evaluation {float:right;}
+.evaluation h5 {
+	padding:0 0 8px 0;
+	font:bold 12px Arial;
+}
+.evaluation + .evaluation h5 {padding:0;}
+.indicate {
+	clear:both;
+	background:#f3f3f3;
+	height:51px;
+	padding:22px 0 0 0;
+}
+.lkIndicate {
+	text-transform:uppercase;
+	font:bold 10px/30px Arial;
+	width:169px;
+	height:30px;
+	display:block;
+	background:url(../img/lk-indicarAmigo.jpg) no-repeat;
+	margin:0 auto;
+	text-align:center;
+}
+/*****************
+	MEU CARRINHO
+******************/
+.processPurchase {
+	border:1px solid #e5e5e5;
+	border-top:none;
+	padding:0 0 18px 0;
+	overflow: hidden;
+}
+.processPurchase h3 {font-weight:bold;}
+
+.boxPayment {
+	overflow: hidden;
+	clear: both;
+}
+/*****************
+	MIGALHA
+	PROCESSO
+	DE COMPRA
+******************/
+.navPurchase {
+	width:939px;
+	background:url(../img/bg-navCompra.png) no-repeat;
+}
+.navPurchase ul {
+	height:58px;
+	width:679px;
+	margin:0 auto;
+}
+.navPurchase ul li {
+	float:left;
+	line-height:58px;
+}
+.navPurchase ul li a {
+	display:block;
+	text-align:center;
+	font:bold 13px/59px Arial;
+}
+.lkCart {
+	width:120px;
+	margin:0 0 0 2px;
+}
+.lkIdentification {
+	width:100px;
+	margin:0 0 0 36px;
+}
+.lkDelivery {margin:0 0 0 72px;}
+.lkPayment {
+	margin:0 0 0 67px;
+	width:82px;
+}
+.lkConfirmation {
+	margin:0 0 0 65px;
+	width:85px!important;
+}
+
+/****************
+	MEU CARRINHO
+*****************/
+
+.tbCart {border-collapse:collapse;}
+.tbCart thead th {
+	font:12px Arial;
+	text-align:center;
+	padding:22px 0 16px 0;
+}
+.tbCart tbody td {
+	border-top:1px solid #e5e5e5;
+	text-align:center;
+	vertical-align:middle;
+	padding:10px 0;
+	font:14px Arial;
+}
+.lkTbCartProduct {
+	float:left;
+	border:1px solid #e5e5e5;
+	margin:0 17px;
+	padding:17px 26px;
+}
+.ttTableCart {
+	float:left;
+	height:61px;
+	padding:17px 0 8px 0;
+}
+.ttTableCart a {
+	border:none;
+	float:none;
+	margin:0;
+	font:bold 14px Arial;
+	padding:0;
+}
+.remove {
+	border:none!important;
+	float:none!important;
+	padding:0!important;
+	margin:0 auto!important;
+	display:block;
+	font:12px Arial;
+}
+.ttTableCart em {
+	display:block;
+	text-align:left;
+	font:bold 12px Arial;
+}
+
+.tbCart tfoot {background:#f5f5f5;}
+
+.tbCart tfoot td {
+	border-bottom:1px solid #e5e5e5;
+	padding:25px 0 14px 0;
+}
+
+.tbCart .cep {
+	font:bold 12px/29px Arial;
+	text-align:right;
+	float:left;
+	width:393px;
+	margin:0 20px 0 23px;
+}
+
+.cepZipNumber {
+	width:50px;
+	height:31px;
+	border:0;
+	font:bold 13px/29px Arial;
+	padding:0 0 0 12px;
+	float:left;
+	margin:0 5px 0 0;
+}
+.calculationCart {
+	height:30px;
+	float:left;
+	text-transform:uppercase;
+}
+a.calculationCart:before {
+	content:"";
+	background:url(../img/bt-buttons.png) no-repeat 0 -335px;
+	height:30px;
+	float:left;
+	width:18px;
+}
+a.calculationCart:after {
+	content:"";
+	float:left;
+	background: url(../img/bt-buttons.png) 0 -259px no-repeat;
+	height:30px;
+	width:18px;
+}
+a.calculationCart span {
+	float: left;
+	background:url(../img/bt-buttons.png) repeat 0 -417px;
+	height:30px;
+	font:bold 12px/30px Arial;
+	cursor:pointer;
+}
+
+/***************
+	correio
+	pagamento
+***************/
+.mailPayment {
+	float:right;
+	width:495px;
+	list-style:none;
+}
+.mailPayment li {
+	margin:0 0 11px 0;
+	overflow:hidden;
+}
+.mailPayment span {
+	font:12px Arial;
+}
+.mailPayment strong {font-weight:bold;}
+
+/***************
+	valor total
+	da compra
+***************/
+.total {background:#f6ffe1;}
+.total em {
+	text-align: right;
+	display:block;
+	font:bold 13px Arial;
+	padding:0 51px 0 0;
+}
+.total big {
+	text-align:right;
+	font:bold 22px Arial;
+	display:block;
+	padding:0 51px 0 0;
+}
+.total big + em {padding-top:10px;}
+
+/*********************
+	botoes de compra
+**********************/
+.buttonsPurchase {
+	float:right;
+	padding-right:29px;
+}
+.buttonsPurchase a {
+	margin:5px 19px 0 0;
+	overflow:hidden;
+}
+
+.buttons {
+	background:#fff;
+	border-bottom: 0 !important;
+}
+
+/******************
+	IDENTIFICAÇÃO
+*******************/
+
+/***************
+	LOGIN HELP
+****************/
+.help {
+	width:940px;
+	overflow:hidden;
+	padding:159px 0 20px 0;
+}
+.help ul {
+	width:750px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.help li {
+	background:url(../img/bg-listHelp.jpg) no-repeat right center;
+	height:159px;
+	float:left;
+	width:255px;
+}
+.help li + li {	background:none;}
+.help li + li + li {
+	width:239px;
+	background:url(../img/bg-listHelp.jpg) no-repeat left center;
+}
+.help div {background:url(../img/tt-duvidas.jpg) no-repeat center top;}
+
+.help li + li div {
+	background:url(../img/tt-senha.jpg) no-repeat center top;
+	width:255px;
+	margin:0 auto;
+}
+.help li + li + li div {
+	background:url(../img/tt-cliente.jpg) no-repeat center top;
+	width:239px;
+	margin:0 auto;
+}
+.tt-help {
+	font:bold 20px Arial;
+	padding:90px 0 0 0;
+	margin:0 auto;
+	text-align:center;
+}
+.help {
+	font:12px Arial;
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+.ttHelp {
+    font: bold 20px Arial;
+    margin: 0 auto;
+    padding: 90px 0 0;
+    text-align: center;
+}
+ .lkHelp {font:12px Arial;}
+/*********************
+	ESCOLHA ENDEREÇO
+**********************/
+.choice nav {
+	width:630px;
+	margin:0 auto;
+	background:url(../img/bg-listHelp.png) no-repeat center center;
+	clear: both;
+	overflow: hidden;
+}
+.ttChoice {
+	text-transform:uppercase;
+	font:bold 15px Arial;
+}
+.choice div {
+	float:left;
+	padding:66px 0 0 0;
+	width:211px;
+}
+.choice ul {
+	padding:39px 0 26px 0;
+	width:188px;
+}
+.choice li {font:12px/22px Arial;}
+.choice a {margin-bottom:17px;}
+.choice a + a {margin-bottom:0;}
+
+.useAddress {
+	background: url(../img/bt-buttons.png) 0 -79px no-repeat;
+	height:39px;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	display:block;
+	clear:both;
+}
+.useAddress span {
+	background: url(../img/bt-buttons.png) 0 -156px repeat-x;
+	height:39px;
+	margin:0px 0 0 15px;
+	font:bold 12px/39px Arial;
+	float:left;
+	text-transform:uppercase;
+}
+.useAddress:after {
+	margin:0px;
+	background: url(../img/bt-buttons.png) 0 0 repeat-x;
+	float:left;
+	content: "";
+	height: 39px;
+	width:18px;
+}
+/*********************
+	ESCOLHA CARTAO
+**********************/
+.card nav {
+	margin: 47px 0 12px 0;
+	overflow: hidden;
+}
+.card ul {
+	background:url(../img/bg-formasPagamento.jpg) no-repeat 0 0px;
+	width:668px;
+	height:180px;
+	margin: 0 auto;
+}
+.card ul li {
+	float:left;
+	width:138px;
+	margin:5px 0px 0 35px;
+	overflow: hidden;
+	height:152px;
+}
+.card ul li:first-child {margin: 0;}
+.card ul li a {
+	display: block;
+	height:152px;
+	text-indent:-9000em;
+	outline:0;
+}
+/**************
+	formas de
+	pagamento
+**************/
+.plots {
+	background:#f5f5f5;
+	overflow: hidden;
+	padding:40px 0px;
+}
+.containerCards {
+	margin: 0 auto;
+	width:723px;
+}
+
+.ttCards {
+	text-transform:uppercase;
+	font:bold 15px/21px Arial;
+}
+.formPayment h4 {
+	float: left;
+	overflow: hidden;
+	padding: 0 10px 0px 0px;
+}
+.navigationCards h3 {
+	float: none;
+	width:720px;
+	margin: 0 auto;
+	padding:0 0 38px 0;
+}
+.txtCards {
+	font:13px Arial;
+	clear:both;
+	margin:20px 0;
+}
+.billet {
+	margin: 0 0 44px 0;
+	overflow: hidden;
+	padding:40px 0px;
+}
+.billet h4 {float: none;}
+/**************
+	CONFIRMAÇÃO
+	    DE
+	PAGAMENTO
+**************/
+.confirmation {
+	padding: 0px 0px 53px 0px;
+	border-bottom:1px solid #e5e5e5;
+	clear: both;
+}
+.confirmationPayment {
+	margin:0 0 0 39px;
+	padding: 60px 0px 0px 0px;
+	width:588px;
+	overflow: hidden;
+}
+.numRequest {
+	float: left;
+	width:227px;
+}
+
+.topRequest {
+	background:url(../img/bg-TopoNumPedido.png) no-repeat 0 0;
+	height:17px;
+}
+.numRequest div {
+	background:url(../img/bg-numPedido.png) repeat 0 0;
+	height:131px;
+}
+.bottomRequest {
+	background:url(../img/bg-bottomNumPedido.png) no-repeat 0 0;
+	height:15px;
+	width:227px;
+}
+.numRequest h4 {
+	text-align:center;
+	margin: 0 auto 12px auto;
+	font: 16px Arial;
+}
+.numRequest big {
+	text-align: center;
+	font:bold 33px Arial;
+	margin: 0 auto 12px auto;
+	display: block;
+}
+.numRequest p {
+	font:12px Arial;
+	text-align: center;
+	width:188px;
+	margin:0 auto;
+}
+.numRequest p a {display: block;}
+/********************
+	DADOS PAGAMENTO
+********************/
+.dataPayment {
+	float: right;
+	width:337px;
+}
+.dataPayment h4 {
+	font: bold 15px Arial;
+	text-transform:uppercase;
+	padding: 0 0px 36px 0px;
+}
+.dataPayment figure {
+	width:194px;
+	float: left;
+}
+.dataPayment figure img {
+	float: left;
+	margin: 0 10px 0 0;
+	overflow: hidden;
+}
+
+.dataPayment figcaption {
+	font:bold 13px/31px Arial;
+}
+.dataPayment .print {
+	background:url(../img/bg-imprimir.jpg) no-repeat;
+	width:130px;
+	height:36px;
+	text-transform:uppercase;
+	font:bold 12px/38px Arial;
+	float: left;
+	text-indent:47px;
+	margin: 0 0 49px 0;
+	overflow: hidden;
+}
+.dataPayment p {
+	clear: both;
+	font:bold 13px Arial;
+}
+/*******************
+	DADOS ENTREGA
+*******************/
+.dataDelivery {border-bottom:1px solid #e5e5e5;}
+.dataDelivery div {
+	width:876px;
+	margin: 0 auto;
+	padding:39px 0 51px 0;
+}
+.dataDelivery h5 {
+	font:bold 15px Arial;
+	text-transform:uppercase;
+	padding: 0 0px 17px 0px;
+}
+
+.dataDelivery dt strong {font:bold 13px Arial;}
+.dataDelivery dd {
+	padding:0 0 15px 0;
+	font:13px Arial;
+}
+/*****************
+	table
+	confirmacao
+******************/
+.tbConfirmation {
+	border-collapse:collapse;
+	width:100%;
+}
+.tbConfirmation thead th {
+	font:12px Arial;
+	text-align:center;
+	padding: 13px 0px;
+}
+.tbConfirmation thead th:first-child {
+	font:bold 15px Arial;
+	text-align:left;
+	text-indent:38px;
+}
+.tbConfirmation tbody td {
+	text-align:center;
+	font:11px Arial;
+	vertical-align:middle;
+	padding: 10px 0px;
+	border-top:1px solid #e5e5e5;
+}
+.tbConfirmation .lkTbProduct {
+	border:1px solid #e5e5e5;
+	float: left;
+	margin:0 10px 0 37px;
+	overflow: hidden;
+	display: inline;
+	width:129px;
+	height:78px;
+}
+.tbConfirmation figure img {
+	line-height:78px;
+	display: block;
+	margin:0 auto;
+	padding-top:13px;
+}
+.tbConfirmation figcaption {
+	text-align:left;
+	font:normal 11px Arial;
+	height:78px;
+}
+.tbConfirmation figcaption h6 {padding:26px 0 0 0;}
+.tbConfirmation figcaption a {
+	border:none;
+	margin:0;
+	float: none;
+	font:bold 14px Arial;
+}
+.tbConfirmation tfoot td {
+	border-top:1px solid #e5e5e5;
+	padding:34px 0;
+}
+.tbConfirmation tfoot div {
+	width:850px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.tbConfirmation tfoot p {
+	float: right;
+	text-align:right;
+	font:12px Arial;
+	padding:0 57px 0 0;
+}
+.tbConfirmation tfoot em {
+	float: right;
+	text-align: right;
+	font:12px Arial;
+}
+/****************
+	HISTORICO
+	DE PEDIDOS
+****************/
+section.historico {
+	background:#fff;
+	width:689px;
+	border:1px solid #e5e5e5;
+	border-top:none;
+	margin:0 0 20px 0;
+	overflow:hidden;
+}
+.tbHistory {
+	width:100%;
+	border-collapse:collapse;
+}
+.tbHistory thead th ,
+.tbHistory tbody td {
+	font:12px Arial;
+	text-align:center;
+	padding: 13px 0px;
+}
+.tbHistory tbody td {border-top:1px solid #e5e5e5;}
+.tbHistory tbody a {font:bold 12px Arial;}
+
+.tbSubHistory {
+	width: 100%;
+	border-collapse: collapse;
+}
+.tbSubHistory tbody td {
+	border:none;
+	text-align:left;
+	padding:0;
+}
+.tbSubHistory tfoot th {padding:20px 0 5px 0;}
+.tbSubHistory tfoot ins {
+	text-decoration:none;
+	display: block;
+}
+.viewDetails {display: none;}
+
+
+/****************
+	CADASTRO
+****************/
+
+/****************
+	CONTEUDO
+****************/
+.parContent p {
+	font:13px Arial;
+	padding:0 0 27px 0;
+}
+/****************
+	RESULTADO
+	BUSCA
+****************/
+.pagination {
+	width:442px;
+	margin:0 auto;
+}
+.pagination .previous {
+	float: left;
+	background:url(../img/ico-navigation.jpg) no-repeat;
+	width:35px;
+	height:35px;
+	margin-top:1px;
+	overflow: hidden;
+}
+.pagination .next {
+	float: right;
+	background:url(../img/ico-navigation.jpg) no-repeat -44px 0px;
+	width:35px;
+	height:35px;
+	margin-top:1px;
+	overflow: hidden;
+}
+.listPagination {
+	width:369px;
+	overflow: hidden;
+	float: left;
+}
+.listPagination li {
+	float:left;
+	margin:0 3px;
+	overflow: hidden;
+}
+
+.listPagination a {
+	background:url(../img/ico-pages.jpg) no-repeat;
+	width:35px;
+	height:35px;
+	display: block;
+	font:bold 15px/35px Arial;
+	text-align:center;
+}
+.listPagination a:hover {
+	text-decoration:none;
+	background-position:1px -99px;
+}
+.listPagination a:focus ,
+.listPagination a:visited {
+	text-decoration:none;
+	background-position:1px -48px;
+}
+/*************
+	FALE
+	CONOSCO
+**************/
+.artMeddium {
+	width:611px;
+	margin:0 auto;
+	padding: 32px 0px 30px 0px;
+}
+.about {
+	font:14px Arial;
+	padding:0 0 10px 0;
+}
+/*************
+	BUSCA
+**************/
+.resultSearch {
+	width:617px;
+	margin:0 auto;
+	padding:33px 0 27px 0;
+}
+.txtSearch {
+	font:bold 14px Arial;
+	padding:0 0 5px 0;
+}
+.resultSearch p {font-weight:normal;}
+.resultSearch dl {padding: 23px 0px 10px 0px;}
+.resultSearch dl dt {
+	font:bold 14px Arial;
+	padding: 0px 0px 19px 0px;
+}
+.resultSearch dl dd {font:14px Arial;}
+
+/*************
+	PERGUNTAS
+	FREQUENTES
+	(FAQ)
+**************/
+#faq {
+	width:612px;
+	margin:0 auto 36px auto;
+	padding:40px 0 0 0;
+}
+#faq dt {
+	font:bold 14px/50px Arial;
+	text-indent:38px;
+	cursor: pointer;
+	background:url(../img/tt-faq.jpg) no-repeat;
+	width:611px;
+	height:50px;
+	margin:0 0 2px 0;
+	overflow: hidden;
+}
+#faq dd {
+	font:13px Arial;
+	width:534px;
+	margin:0 auto;
+	padding:26px 0;
+}
+/*********
+	404
+**********/
+.notFound li {font:14px Arial;}
+/************
+	CHANGE
+	PASSWORD
+************/
+.ttChangePassword {
+	font:20px Arial;
+	padding: 0 0 12px 0;
+}
+
+/*INPUTS PERSONALIZADOS*/
+.big {
+	background-position: 0 -216px;
+	width:440px;
+}
+.medium {
+	background-position:0 -517px;
+	width:224px;
+	height: 32px;
+	border:0;
+}
+.smaller {
+	background-position:0 -603px;
+	width:154px;
+	height: 32px;
+	border:0;
+}
+.micro {
+	background-position:0 -688px;
+	width:62px;
+	height: 32px;
+	border:0;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+/*@media only screen and (max-width:1024px) {
+
+	li:nth-child(2n) {border:1px solid red;}
+}*/
