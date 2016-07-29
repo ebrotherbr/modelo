@@ -2,6 +2,8 @@ package br.com.ebrother.modelo.controller;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +16,7 @@ import br.com.ebrother.modelo.dto.ContatoDTO;
 import br.com.ebrother.modelo.service.ContatoService;
 
 @RestController
+@Transactional
 @RequestMapping("/contatos")
 public class ContatoController {
 
