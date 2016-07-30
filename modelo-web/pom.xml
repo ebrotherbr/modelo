@@ -27,7 +27,6 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>${version.war.plugin}</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 					<warSourceExcludes>app/**,bower_components/**,node_modules/**,test/**,e2e/**</warSourceExcludes>
