@@ -20,11 +20,6 @@ public class ContatoServiceImpl implements ContatoService {
 	@Autowired
 	private ContatoDAO contatoDAO;
 
-	// @Autowired
-	// public ContatoServiceImpl(final ContatoDAO contatoDAO) {
-	// this.contatoDAO = contatoDAO;
-	// }
-
 	@Override
 	public ContatoDTO obterContato(final String contatoId) {
 
