@@ -1,19 +1,23 @@
 package br.com.ebrother.modelo.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import br.com.ebrother.poc.model.EntidadeBase;
 
 @Entity
-@Table(name = "contato")
-public class Contato extends EntidadeBase<Long> {
+@Table(name = "Categoria")
+public class Categoria extends EntidadeBase<Long> {
 
-	private static final long serialVersionUID = 43350555499941593L;
+	private static final long serialVersionUID = 3170952206643592419L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,7 +28,10 @@ public class Contato extends EntidadeBase<Long> {
 	private String nome;
 
 	@Column
-	private String email;
+	private String descricao;
+
+	@OneToMany(mappedBy = "categoria")
+	private final List<Produto> produtos = new ArrayList<>();
 
 	@Override
 	public Long getId() {
@@ -43,12 +50,16 @@ public class Contato extends EntidadeBase<Long> {
 		this.nome = nome;
 	}
 
-	public String getEmail() {
-		return this.email;
+	public String getDescricao() {
+		return this.descricao;
 	}
 
-	public void setEmail(final String email) {
-		this.email = email;
+	public void setDescricao(final String descricao) {
+		this.descricao = descricao;
+	}
+
+	public List<Produto> getProdutos() {
+		return this.produtos;
 	}
 
 }

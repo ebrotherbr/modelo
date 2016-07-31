@@ -59,7 +59,7 @@ public class JPAConfiguration {
 
 	private Properties additionalProperties() {
 		final Properties properties = new Properties();
-		properties.setProperty("hibernate.hbm2ddl.auto", "validate");
+		properties.setProperty("hibernate.hbm2ddl.auto", "update");
 		properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
 		properties.setProperty("hibernate.show_sql", "true");
 		properties.setProperty("hibernate.format_sql", "true");
