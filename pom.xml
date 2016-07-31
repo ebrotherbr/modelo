@@ -10,26 +10,27 @@
 		<module>modelo-ejb</module>
 		<module>modelo-ear</module>
 	</modules>
-	
+
 	<parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.3.6.RELEASE</version>
-    </parent>
-	
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.3.6.RELEASE</version>
+	</parent>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<version.wildfly.maven.plugin>1.0.2.Final</version.wildfly.maven.plugin>
 
-		<version.compiler.plugin>3.1</version.compiler.plugin>
+		<version.compiler.plugin>3.5.1</version.compiler.plugin>
 		<version.ear.plugin>2.10</version.ear.plugin>
 		<version.ejb.plugin>2.3</version.ejb.plugin>
-		<version.surefire.plugin>2.16</version.surefire.plugin>
 		<version.war.plugin>2.5</version.war.plugin>
 
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
+
+		<selma.version>0.15</selma.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -58,7 +59,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<version>1.3.6.RELEASE</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
@@ -69,13 +69,23 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-			<version>1.3.6.RELEASE</version>
-			<!-- <exclusions>
-				<exclusion>
-					<groupId>dom4j</groupId>
-					<artifactId>dom4j</artifactId>
-				</exclusion>
-			</exclusions> -->
+			<!-- <exclusions> <exclusion> <groupId>dom4j</groupId> <artifactId>dom4j</artifactId> 
+				</exclusion> </exclusions> -->
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.5</version>
 		</dependency>
 	</dependencies>
 
@@ -96,12 +106,14 @@
 		<pluginManagement>
 			<plugins>
 				<plugin>
-					<groupId>org.wildfly.plugins</groupId>
-					<artifactId>wildfly-maven-plugin</artifactId>
-					<version>${version.wildfly.maven.plugin}</version>
-					<inherited>true</inherited>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${version.compiler.plugin}</version>
 					<configuration>
-						<skip>true</skip>
+						<source>${maven.compiler.source}</source>
+						<target>${maven.compiler.target}</target>
+						<debug>true</debug>
+						<optimize>true</optimize>
 					</configuration>
 				</plugin>
 			</plugins>

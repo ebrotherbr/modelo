@@ -9,21 +9,18 @@ import br.com.ebrother.modelo.data.impl.CategoriaDAO;
 import br.com.ebrother.modelo.dto.CategoriaDTO;
 import br.com.ebrother.modelo.model.Categoria;
 import br.com.ebrother.modelo.service.CategoriaService;
+import br.com.ebrother.poc.service.ServiceBase;
 
 @Service
-public class CategoriaServiceImpl implements CategoriaService {
+public class CategoriaServiceImpl extends ServiceBase implements CategoriaService {
 
 	@Autowired
 	private CategoriaDAO categoriaDAO;
 
 	@Override
-	public CategoriaDTO obterCategoria(final String categoriaId) {
-		final Categoria categoria = this.categoriaDAO.obter(Categoria.class, Long.valueOf(categoriaId));
-		final CategoriaDTO categoria2 = new CategoriaDTO();
-		categoria2.setId(categoria.getId());
-		categoria2.setDescricao(categoria.getDescricao());
-		categoria2.setNome(categoria.getNome());
-		return categoria2;
+	public CategoriaDTO obterCategoria(final Long categoriaId) {
+		final Categoria categoria = this.categoriaDAO.obter(categoriaId);
+		return this.converter(categoria, CategoriaDTO.class);
 	}
 
 	@Override

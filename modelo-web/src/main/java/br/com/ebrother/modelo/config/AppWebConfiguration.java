@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @EnableWebMvc
 @Configuration
 @ComponentScan(basePackages = { "br.com.ebrother.modelo.controller", "br.com.ebrother.modelo.data.impl",
-		"br.com.ebrother.modelo.service" })
+		"br.com.ebrother.modelo.service", "br.com.ebrother.poc" })
 public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 
 	@Override

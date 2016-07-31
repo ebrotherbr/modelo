@@ -66,4 +66,9 @@ public class JPAConfiguration {
 		return properties;
 	}
 
+	// @Bean
+	// public Conversor conversor() {
+	// return Selma.builder(Conversor.class).build();
+	// }
+
 }

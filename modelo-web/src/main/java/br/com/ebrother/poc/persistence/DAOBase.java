@@ -2,6 +2,7 @@ package br.com.ebrother.poc.persistence;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
+import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
@@ -24,6 +25,18 @@ public class DAOBase<T extends EntidadeBase<PK>, PK extends Serializable> extend
 	protected Criteria createCriteria() {
 		final DetachedCriteria detachedCriteria = this.createDetachedCriteria();
 		return detachedCriteria.getExecutableCriteria((Session) this.getEntityManager().getDelegate());
+	}
+
+	public T obter(final PK id) {
+		return super.obter(this.getEntityClass(), id);
+	}
+
+	public List<T> listar() {
+		return super.listar(this.getEntityClass());
+	}
+
+	public void excluir(final PK id) {
+		super.excluir(this.getEntityClass(), id);
 	}
 
 }

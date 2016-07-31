@@ -6,7 +6,7 @@ import br.com.ebrother.modelo.dto.CategoriaDTO;
 
 public interface CategoriaService {
 
-	public CategoriaDTO obterCategoria(String categoriaId);
+	public CategoriaDTO obterCategoria(Long categoriaId);
 
 	public List<CategoriaDTO> listarCategorias();
 
