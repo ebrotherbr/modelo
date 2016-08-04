@@ -6,7 +6,7 @@ import br.com.ebrother.modelo.dto.ContatoDTO;
 
 public interface ContatoService {
 
-	public ContatoDTO obterContato(String contatoId);
+	public ContatoDTO obterContato(Long contatoId);
 
 	public List<ContatoDTO> listarContatos();
 

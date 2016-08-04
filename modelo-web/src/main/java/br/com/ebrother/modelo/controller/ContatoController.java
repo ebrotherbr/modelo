@@ -32,7 +32,7 @@ public class ContatoController {
 
 	@RequestMapping(path = "/{contatoId}", method = RequestMethod.GET)
 	public ResponseEntity<ContatoDTO> obterContato(@PathVariable final String contatoId) {
-		return new ResponseEntity<>(this.servico.obterContato(contatoId), HttpStatus.OK);
+		return new ResponseEntity<>(this.servico.obterContato(Long.valueOf(contatoId)), HttpStatus.OK);
 	}
 
 }

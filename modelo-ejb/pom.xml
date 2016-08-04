@@ -14,20 +14,8 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 		</dependency>
-		<!-- Selma - Java Bean mapping -->
-		<dependency>
-			<groupId>fr.xebia.extras</groupId>
-			<artifactId>selma-processor</artifactId>
-			<version>0.15</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>fr.xebia.extras</groupId>
-			<artifactId>selma</artifactId>
-			<version>0.15</version>
-		</dependency>
 	</dependencies>
-
+	
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
