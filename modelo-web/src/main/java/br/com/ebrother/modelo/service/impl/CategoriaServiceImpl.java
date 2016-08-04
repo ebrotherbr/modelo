@@ -20,7 +20,12 @@ public class CategoriaServiceImpl extends ServiceBase implements CategoriaServic
 	@Override
 	public CategoriaDTO obterCategoria(final Long categoriaId) {
 		final Categoria categoria = this.categoriaDAO.obter(categoriaId);
-		return this.converter(categoria, CategoriaDTO.class);
+		final CategoriaDTO categoriaDTO = new CategoriaDTO();
+		categoriaDTO.setId(categoria.getId());
+		categoriaDTO.setDescricao(categoria.getDescricao());
+		categoriaDTO.setNome(categoria.getNome());
+		return categoriaDTO;
+		// return this.converter(categoria, CategoriaDTO.class);
 	}
 
 	@Override
