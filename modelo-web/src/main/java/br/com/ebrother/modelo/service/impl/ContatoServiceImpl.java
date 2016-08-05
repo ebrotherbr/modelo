@@ -24,7 +24,8 @@ public class ContatoServiceImpl extends ServiceBase implements ContatoService {
 	@Override
 	public ContatoDTO obterContato(final Long contatoId) {
 		final Contato contato = this.contatoDAO.obter(contatoId);
-		return this.converter(contato, ContatoDTO.class);
+		// TODO utilizar um conversor
+		return new ContatoDTO();
 	}
 
 	@Override
