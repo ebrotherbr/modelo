@@ -1,20 +1,28 @@
 package br.com.ebrother.modelo;
 
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration;
+import org.springframework.boot.context.embedded.ServletRegistrationBean;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
+import org.springframework.web.servlet.DispatcherServlet;
 
-@EnableWebMvc
-@Configuration
-@ComponentScan(basePackages = { "br.com.ebrother.modelo.controller", "br.com.ebrother.modelo.data.impl",
-		"br.com.ebrother.modelo.service", "br.com.ebrother.poc" })
-public class AppWebConfiguration extends WebMvcConfigurerAdapter {
+@SpringBootApplication
+@Import(value = { JPAConfiguration.class })
+public class AppWebConfiguration extends SpringBootServletInitializer {
 
-	@Override
-	public void configureDefaultServletHandling(final DefaultServletHandlerConfigurer configurer) {
-		configurer.enable();
+	@Bean
+	public DispatcherServlet dispatcherServlet() {
+		return new DispatcherServlet();
+	}
+
+	@Bean
+	public ServletRegistrationBean dispatchServletRegistration() {
+		final ServletRegistrationBean registration = new ServletRegistrationBean(this.dispatcherServlet(), "/rest/*");
+		registration.setName(DispatcherServletAutoConfiguration.DEFAULT_DISPATCHER_SERVLET_REGISTRATION_BEAN_NAME);
+		return registration;
+
 	}
 
 }
