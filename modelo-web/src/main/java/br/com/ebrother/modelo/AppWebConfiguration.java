@@ -1,4 +1,4 @@
-package br.com.ebrother.modelo.config;
+package br.com.ebrother.modelo;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

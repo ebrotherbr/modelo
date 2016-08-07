@@ -1,4 +1,4 @@
-package br.com.ebrother.modelo.config;
+package br.com.ebrother.modelo;
 
 import java.util.Properties;
 
