@@ -20,7 +20,7 @@ public class JPAConfiguration {
 
 	private static final String[] PACKAGES_TO_SCAN = { "br.com.ebrother.modelo.model" };
 	private static final String DRIVE_CLASS_NAME = "org.postgresql.Driver";
-	private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
+	private static final String URL = "jdbc:postgresql://localhost:5432/modelo";
 	private static final String USERNAME = "postgres";
 	private static final String PASSWORD = "postgres";
 

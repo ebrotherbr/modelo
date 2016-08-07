@@ -9,16 +9,21 @@
 	<artifactId>modelo-web</artifactId>
 	<packaging>war</packaging>
 
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
-
 	<dependencies>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.tomcat.embed</groupId>
+					<artifactId>tomcat-embed-websocket</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
 			<groupId>br.com.ebrother</groupId>
-			<artifactId>modelo-ejb</artifactId>
-			<type>ejb</type>
-			<scope>provided</scope>
+			<artifactId>modelo-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

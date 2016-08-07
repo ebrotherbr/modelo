@@ -7,8 +7,9 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>modelo-web</module>
-		<module>modelo-ejb</module>
-		<module>modelo-ear</module>
+		<module>modelo-model</module>
+		<module>modelo-service</module>
+		<module>modelo-persistence</module>
 	</modules>
 
 	<parent>
@@ -20,45 +21,21 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<version.wildfly.maven.plugin>1.0.2.Final</version.wildfly.maven.plugin>
-
-		<version.compiler.plugin>3.3</version.compiler.plugin>
-		<version.ear.plugin>2.10</version.ear.plugin>
-		<version.ejb.plugin>2.3</version.ejb.plugin>
+		<version.compiler.plugin>3.5.1</version.compiler.plugin>
 		<version.war.plugin>2.5</version.war.plugin>
 
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 
+		<java.version>1.8</java.version>
+
 		<selma.version>0.15</selma.version>
 	</properties>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>br.com.ebrother</groupId>
-				<artifactId>modelo-ejb</artifactId>
-				<version>${project.version}</version>
-				<type>ejb</type>
-			</dependency>
-			<dependency>
-				<groupId>br.com.ebrother</groupId>
-				<artifactId>modelo-web</artifactId>
-				<version>${project.version}</version>
-				<type>war</type>
-			</dependency>
-			<dependency>
-				<groupId>br.com.ebrother</groupId>
-				<artifactId>modelo-ear</artifactId>
-				<version>${project.version}</version>
-				<type>ear</type>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
@@ -69,23 +46,16 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-			<!-- <exclusions> <exclusion> <groupId>dom4j</groupId> <artifactId>dom4j</artifactId> 
-				</exclusion> </exclusions> -->
 		</dependency>
 		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>7.0</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.4</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.5</version>
+			<groupId>br.com.ebrother</groupId>
+			<artifactId>poc</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
@@ -102,21 +72,4 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>${version.compiler.plugin}</version>
-					<configuration>
-						<source>${maven.compiler.source}</source>
-						<target>${maven.compiler.target}</target>
-						<debug>true</debug>
-						<optimize>true</optimize>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
 </project>
