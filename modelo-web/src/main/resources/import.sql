@@ -1,0 +1,1 @@
+insert into categoria (id, descricao, nome) values (1, 'Categoria de livros.', 'Livros')

@@ -14,7 +14,7 @@ import javax.persistence.Table;
 import br.com.ebrother.poc.model.EntidadeBase;
 
 @Entity
-@Table(name = "Categoria")
+@Table(name = "categoria")
 public class Categoria extends EntidadeBase<Long> {
 
 	private static final long serialVersionUID = 3170952206643592419L;

@@ -28,8 +28,6 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 
 		<java.version>1.8</java.version>
-
-		<selma.version>0.15</selma.version>
 	</properties>
 
 	<dependencies>
@@ -70,7 +68,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.5.1</version>
+					<version>${version.compiler.plugin}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
