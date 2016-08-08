@@ -1,6 +1,10 @@
 package br.com.ebrother.modelo.dto;
 
-public class CategoriaDTO {
+import br.com.ebrother.poc.vo.DTOBase;
+
+public class CategoriaDTO extends DTOBase {
+
+	private static final long serialVersionUID = 2497744646371765805L;
 
 	private Long id;
 	private String nome;

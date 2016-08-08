@@ -1,6 +1,10 @@
 package br.com.ebrother.modelo.dto;
 
-public class ContatoDTO {
+import br.com.ebrother.poc.vo.DTOBase;
+
+public class ContatoDTO extends DTOBase {
+
+	private static final long serialVersionUID = -6380563268440962510L;
 
 	private String nome;
 	private String email;

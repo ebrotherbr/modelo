@@ -27,7 +27,8 @@ public class CategoriaController {
 
 	@RequestMapping(path = "/{categoriaId}", method = RequestMethod.GET)
 	public ResponseEntity<CategoriaDTO> obterCategoria(@PathVariable final String categoriaId) {
-		return new ResponseEntity<>(this.servico.obterCategoria(Long.valueOf(categoriaId)), HttpStatus.OK);
+		final CategoriaDTO categoria = this.servico.obterCategoria(Long.valueOf(categoriaId));
+		return new ResponseEntity<>(categoria, HttpStatus.OK);
 	}
 
 }
