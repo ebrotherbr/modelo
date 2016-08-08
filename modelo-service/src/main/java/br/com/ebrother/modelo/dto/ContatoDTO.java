@@ -6,8 +6,17 @@ public class ContatoDTO extends DTOBase {
 
 	private static final long serialVersionUID = -6380563268440962510L;
 
+	private Long id;
 	private String nome;
 	private String email;
+
+	public Long getId() {
+		return this.id;
+	}
+
+	public void setId(final Long id) {
+		this.id = id;
+	}
 
 	public String getNome() {
 		return this.nome;

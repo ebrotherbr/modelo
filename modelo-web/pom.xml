@@ -13,12 +13,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<exclusions>
+			<!-- <exclusions>
 				<exclusion>
 					<groupId>org.apache.tomcat.embed</groupId>
 					<artifactId>tomcat-embed-websocket</artifactId>
 				</exclusion>
-			</exclusions>
+			</exclusions> -->
 		</dependency>
 		<dependency>
 			<groupId>br.com.ebrother</groupId>
@@ -26,17 +26,6 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-
-	<repositories>
-		<repository>
-			<id>oss-sonatype</id>
-			<name>oss-sonatype</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
@@ -47,35 +36,6 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 					<warSourceExcludes>app/**,bower_components/**,node_modules/**,test/**,e2e/**</warSourceExcludes>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.bsc.maven</groupId>
-				<artifactId>maven-processor-plugin</artifactId>
-				<version>2.2.4</version>
-				<configuration>
-					<defaultOutputDirectory>
-						${project.build.directory}/generated-sources
-					</defaultOutputDirectory>
-					<processors>
-						<processor>fr.xebia.extras.selma.codegen.MapperProcessor</processor>
-					</processors>
-				</configuration>
-				<executions>
-					<execution>
-						<id>process</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>process</goal>
-						</goals>
-					</execution>
-				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>fr.xebia.extras</groupId>
-						<artifactId>selma-processor</artifactId>
-						<version>${selma.version}</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 	</build>

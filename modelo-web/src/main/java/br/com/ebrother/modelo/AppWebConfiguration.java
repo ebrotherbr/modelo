@@ -1,5 +1,6 @@
 package br.com.ebrother.modelo;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration;
 import org.springframework.boot.context.embedded.ServletRegistrationBean;
@@ -11,6 +12,10 @@ import org.springframework.web.servlet.DispatcherServlet;
 @SpringBootApplication
 @Import(value = { JPAConfiguration.class })
 public class AppWebConfiguration extends SpringBootServletInitializer {
+
+	public static void main(final String[] args) throws Exception {
+		SpringApplication.run(AppWebConfiguration.class, args);
+	}
 
 	@Bean
 	public DispatcherServlet dispatcherServlet() {
