@@ -1,6 +1,6 @@
 package br.com.ebrother.modelo.dto;
 
-import br.com.ebrother.poc.vo.DTOBase;
+import br.com.ebrother.poc.dto.DTOBase;
 
 public class ContatoDTO extends DTOBase {
 

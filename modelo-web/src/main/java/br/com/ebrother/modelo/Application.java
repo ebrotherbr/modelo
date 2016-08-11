@@ -9,12 +9,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.DispatcherServlet;
 
+import br.com.ebrother.poc.messages.impl.MessageByLocaleServiceImpl;
+
 @SpringBootApplication
-@Import(value = { JPAConfiguration.class })
-public class AppWebConfiguration extends SpringBootServletInitializer {
+@Import(value = { JPAConfiguration.class, WebConfig.class, MessageByLocaleServiceImpl.class })
+public class Application extends SpringBootServletInitializer {
 
 	public static void main(final String[] args) throws Exception {
-		SpringApplication.run(AppWebConfiguration.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 	@Bean
@@ -27,7 +29,6 @@ public class AppWebConfiguration extends SpringBootServletInitializer {
 		final ServletRegistrationBean registration = new ServletRegistrationBean(this.dispatcherServlet(), "/rest/*");
 		registration.setName(DispatcherServletAutoConfiguration.DEFAULT_DISPATCHER_SERVLET_REGISTRATION_BEAN_NAME);
 		return registration;
-
 	}
 
 }
