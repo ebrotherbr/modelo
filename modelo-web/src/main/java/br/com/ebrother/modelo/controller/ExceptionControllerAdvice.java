@@ -7,12 +7,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import br.com.ebrother.poc.controller.ControllerBase;
 import br.com.ebrother.poc.exception.NegocioException;
 import br.com.ebrother.poc.exception.NenhumRegistroEncontradoException;
 import br.com.ebrother.poc.exception.util.ResponseExceptionDTO;
 
 @ControllerAdvice
-public class ExceptionControllerAdvice {
+public class ExceptionControllerAdvice extends ControllerBase {
 
 	@ExceptionHandler(NenhumRegistroEncontradoException.class)
 	public ResponseEntity<String> nenhumRegistroEncontrado(final HttpServletRequest req,

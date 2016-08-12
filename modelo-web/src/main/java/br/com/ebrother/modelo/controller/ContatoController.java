@@ -12,21 +12,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.ebrother.modelo.dto.ContatoDTO;
 import br.com.ebrother.modelo.service.ContatoService;
-import br.com.ebrother.poc.messages.MessageByLocaleService;
+import br.com.ebrother.modelo.service.enums.MessageKeyEnum;
+import br.com.ebrother.poc.controller.ControllerBase;
 
 @RestController
 @RequestMapping("/contatos")
-public class ContatoController {
-
-	@Autowired
-	private MessageByLocaleService messages;
+public class ContatoController extends ControllerBase {
 
 	@Autowired
 	private ContatoService servico;
 
 	@RequestMapping("/teste")
 	public String testar() {
-		return "Funcionando!" + this.messages.getMessage("msg.erro");
+		return "Funcionando!" + this.mensagens.getMessage(MessageKeyEnum.ERRO.getKey());
 	}
 
 	@RequestMapping(method = RequestMethod.GET)

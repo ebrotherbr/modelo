@@ -12,10 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.ebrother.modelo.dto.CategoriaDTO;
 import br.com.ebrother.modelo.service.CategoriaService;
+import br.com.ebrother.poc.controller.ControllerBase;
 
 @RestController
 @RequestMapping("/categorias")
-public class CategoriaController {
+public class CategoriaController extends ControllerBase {
 
 	@Autowired
 	private CategoriaService servico;
