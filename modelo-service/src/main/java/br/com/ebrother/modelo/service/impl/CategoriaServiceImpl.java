@@ -10,7 +10,7 @@ import br.com.ebrother.modelo.data.impl.CategoriaDAO;
 import br.com.ebrother.modelo.dto.CategoriaDTO;
 import br.com.ebrother.modelo.model.Categoria;
 import br.com.ebrother.modelo.service.CategoriaService;
-import br.com.ebrother.poc.exception.NegocioException;
+import br.com.ebrother.poc.exception.GenericException;
 import br.com.ebrother.poc.exception.util.IndicadorTipoException;
 import br.com.ebrother.poc.service.ServiceBase;
 
@@ -27,7 +27,7 @@ public class CategoriaServiceImpl extends ServiceBase implements CategoriaServic
 	public CategoriaDTO obterCategoria(final Long categoriaId) {
 		final Categoria entidade = this.categoriaDAO.obter(categoriaId);
 		if (entidade == null) {
-			throw new NegocioException("Funfando", IndicadorTipoException.ERRO);
+			throw new GenericException("Funfando", IndicadorTipoException.ERRO);
 		}
 		return this.categoriaConverter.converterParaDTO(entidade);
 	}
