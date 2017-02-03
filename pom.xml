@@ -52,14 +52,12 @@
 			<artifactId>maven-compiler-plugin</artifactId>
 			<version>3.5.1</version>
 		</dependency>
-		<!-- <dependency> <groupId>br.com.ebrother</groupId> <artifactId>poc</artifactId> 
-			<version>0.0.1-SNAPSHOT</version> </dependency> -->
 		<dependency>
 			<groupId>br.com.ebrother</groupId>
 			<artifactId>poc</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-			<!-- <scope>system</scope>
-			<systemPath>${basedir}/poc.jar</systemPath> -->
+			<scope>system</scope>
+			<systemPath>${project.basedir}/poc-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 	</dependencies>
 
@@ -80,10 +78,6 @@
 		<repository>
 			<id>spring-releases</id>
 			<url>https://repo.spring.io/libs-release</url>
-		</repository>
-		<repository>
-			<id>lib_id</id>
-			<url>file://poc.jar</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
