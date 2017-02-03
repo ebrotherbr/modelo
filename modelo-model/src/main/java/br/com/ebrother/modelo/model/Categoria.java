@@ -11,11 +11,11 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import br.com.ebrother.poc.model.EntidadeBase;
+import br.com.ebrother.poc.model.EntityBase;
 
 @Entity
 @Table(name = "categoria")
-public class Categoria extends EntidadeBase<Long> {
+public class Categoria extends EntityBase<Long> {
 
 	private static final long serialVersionUID = 3170952206643592419L;
 

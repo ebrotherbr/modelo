@@ -7,11 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import br.com.ebrother.poc.model.EntidadeBase;
+import br.com.ebrother.poc.model.EntityBase;
 
 @Entity
 @Table(name = "contato")
-public class Contato extends EntidadeBase<Long> {
+public class Contato extends EntityBase<Long> {
 
 	private static final long serialVersionUID = 43350555499941593L;
 

@@ -10,11 +10,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import br.com.ebrother.poc.model.EntidadeBase;
+import br.com.ebrother.poc.model.EntityBase;
 
 @Entity
 @Table(name = "produto")
-public class Produto extends EntidadeBase<Long> {
+public class Produto extends EntityBase<Long> {
 
 	private static final long serialVersionUID = -5266631565312719089L;
 
